@@ -1,0 +1,17 @@
+<app-search-bar (sendUserDetails)="getUser($event)"></app-search-bar>
+<div class="githubDetails">
+    <div *ngIf="userDetails">
+        <a class ="avatar_url" href="{{ userDetails.avatar_url}}" target="_blank">
+            <img class="avatar" src="{{ userDetails.avatar_url}}" alt="No Image">
+        </a>
+        <p>UserId : {{ userDetails.login | uppercase}}</p>
+        <p>UserName : {{ userDetails.name }}</p>
+        <p>Profile Created  : {{ userDetails.created_at | date }}</p>
+        <a class ="url" href="{{ userDetails.html_url }}" target="_blank">Github Link</a>
+    </div>
+    <div *ngIf="!userDetails">
+        <img class="avatar" src="./assets/sad.JPG" alt="">
+        <p>No user found</p>
+    </div>
+
+</div>

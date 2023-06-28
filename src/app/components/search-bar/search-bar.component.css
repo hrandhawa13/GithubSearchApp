@@ -1,0 +1,19 @@
+.search-bar{
+    margin: auto;
+    width: 50%;
+    height: 100px;
+}
+.search-bar>input{
+    margin: auto;
+    margin-top: 40px;
+    height: 50%;
+    width: 50%;
+    font-size: large;
+    border-radius: 30px;
+    border-color: rgb(255, 64, 0);
+    display: block;
+}
+body{
+    background-color: blueviolet;
+    color-scheme: dark;
+}
